@@ -1,0 +1,15 @@
+{
+  "mcpServers": {
+    "context7": {
+      "command": "npx",
+      "args": ["-y", "@upstash/context7-mcp"]
+    },
+    "postgres": {
+      "command": "npx",
+      "args": ["-y", "postgres-mcp-hardened", "--stdio"],
+      "env": {
+        "DATABASE_URL": "${MCP_POSTGRES_URL}"
+      }
+    }
+  }
+}
